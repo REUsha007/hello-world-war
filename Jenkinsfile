@@ -9,7 +9,7 @@ pipeline {
         }
          stage('build') {
             steps {
-                sh 'mvn clean install'
+                sh 'mvn package'
             }
         }
      stage('Push artifacts into artifactory') { 
