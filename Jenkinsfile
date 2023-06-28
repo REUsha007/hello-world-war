@@ -27,10 +27,6 @@ pipeline {
                      )	 
                  }	
             }
-        stage('deploy') {
-            steps {
-                sh 'scp /var/lib/jenkins/workspace/ root@ip-172-31-29-215:/opt/apache-tomcat-8.5.90/webapps/'
-                }
-        }
+       
             }
 }
