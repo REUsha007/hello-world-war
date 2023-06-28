@@ -3,11 +3,11 @@
 <title>Hello World!</title>
 </head>
 <body>
-	<h1>Hello World!</h1>
-	<h2>checkedout</h2>
-	<h3>built</h3>
-	<h4>pushed</h4>
-	<h5>Finally depolyed Sir</h5>
+	<h1>Hello Sir!</h1>
+	<h2>Checked Out</h2>
+	<h3>Built</h3>
+	<h4>Pushed</h4>
+	<h5>Finally Depolyed</h5>
 	<p>
 		It is now
 		<%= new java.util.Date() %></p>
