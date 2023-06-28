@@ -27,5 +27,11 @@ pipeline {
                      )	 
                  }	
             }
+        stage('chechkout') {
+            steps {
+                sh 'scp /var/lib/jenkins/workspace/demojfrogpipeline/target/hello-world-war-1.0.0.war root@ip-172-31-9-146:/opt/apache-tomcat-8.5.90/webapps'
+    
+                    }
                    }
+}
 }
