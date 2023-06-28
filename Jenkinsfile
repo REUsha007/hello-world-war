@@ -30,7 +30,7 @@ pipeline {
         stage('deploy') {
             steps {
                 sshagent(['da1618c9-da22-4258-a64f-f09c3b113004']) {
-                sh 'scp -o StrictHostKeyChecking=no /var/lib/jenkins/workspace/demojfrogpipeline/target/hello-world-war-1.0.6.war root@ip-172-31-9-146:/opt/apache-tomcat-8.5.90/webapps'
+                sh 'scp -o StrictHostKeyChecking=no /var/lib/jenkins/workspace/demojfrogpipeline/target/hello-world-war-1.0.2.war root@ip-172-31-9-146:/opt/apache-tomcat-8.5.90/webapps'
                         }
                    }
 }
